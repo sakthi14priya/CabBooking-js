@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>DateTime</title>
+</head>
+<style>
+    div{
+        width: 400px;
+        height: 200px;
+        border: 2px solid red;
+    }
+    </style>
+<body>
+    <center>
+        <div id="myDiv">
+<form onsubmit="DateTime()">
+<label for="Date">Enter the Date:</label>
+<input type="Date" placeholder="Enter Date" name="Date" id="Date" required></br><br/>
+<label for="Time">Enter the Time:</label>
+<input type="Time" placeholder="Enter Time" name="Time" id="Time" required></br><br/>  
+<center><button>Submit</button></center>
+</div>
+</form>
+<script>
+       function DateTime()
+       {
+       event.preventDefault();
+       alert("The DateTime is Accepted")   
+       window.location.href="Book.html";
+       }
+</script>
+</body>
+</html>

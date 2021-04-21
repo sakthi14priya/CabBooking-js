@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Bill</title>
+</head>
+<body>
+<form onsubmit="Bill()">
+<label> Select Cab Type</label>
+<Select name="Cabtype" required>
+<option disabled>--Select cab type--</option>
+<option value="MICRO">Micro</option>
+<option value="MINI">Mini</option>
+<option value="PRIME">Prime</option>
+</Select>
+<br/>
+<br/>
+<label>Enter Kms:</label>
+<input type="number" id="km" placeholder="Enter Kms" required>
+<br/>
+<br/>
+<center><button>Submit</button></center>
+</form>
+<script>
+  function Bill()
+  {
+    event.preventDefault();
+    alert("The button is clicked")
+    window.location.href="DateTime.html";
+  }
+</script>
+</body>
+</html>

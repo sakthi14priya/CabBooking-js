@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Cab Types</title>
+        <body>
+            <h1>Cab Type</h1>
+          <form onsubmit="cabtype()">
+            <table border="1">
+                <thead>
+                    <tr><th>Type</th><th>Price Per Km</th></tr>
+                </thead>
+                <tbody>
+                        <tr><td>Micro</td><td>Rs.10 Per Km</td></tr>
+                        <tr><td>Mini</td><td>Rs.15 Per Km</td></tr>
+                        <tr><td>Prime</td><td>Rs.20 Per Km</td></tr>
+                </tbody>
+            </table>
+            <br/><br/>
+            <center><button>Submit</button></center>
+        </form>
+          <script>
+                function cabtype()
+                {
+                  event.preventDefault();
+                  alert("The Submit Button is Clicked")
+                  window.location.href="Bill.html";
+                }                
+                </script>
+        </body>
+    </head>
+</html>
