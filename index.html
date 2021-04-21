@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <style>
+        div {
+            width: 400px;
+            height: 200Px;
+            border: 2px solid blue;
+        }
+        </style>
+        </head>
+        <body>
+            <center>
+                <div id="myDiv">
+            <h1 style="color:blue;">Login Page</h1>
+            <form onsubmit="login()">
+                <label for="UserName">Enter the UserName:</label>
+                <input type="text" name="UserName" id="UserName" placeholder="Enter Name"required autofocus>
+                <br/><br/>
+                <label for="password">Enter the Password:</label>
+                <input type="number" name="password" id="password" placeholder="Enter password" required autofocus>
+                <br/><br/>
+                <button>Submit</button>
+            </form>
+            </div>
+            </center>
+            <script>
+                  function login()
+                  {
+                      event.preventDefault();
+                      alert("Login clicked Successfull")
+                      let UserName = document.querySelector("#UserName").value;
+                      alert("UserName:" +UserName);
+                      let password = document.querySelector("#password").value;
+                      alert("Password:" +password);
+                      if(UserName == "admin" && password == "1234" && UserName.length > 3 && password.length > 3) 
+                      {
+                      alert("Login Success")
+                      window.location.href="cabtype.html";
+                      }
+                      else {
+                          alert("Invalid Login Credentials");
+                      }
+                  }
+            </script>
+        </body>
+</html>
