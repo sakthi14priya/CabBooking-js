@@ -5,14 +5,17 @@
         div {
             width: 400px;
             height: 200Px;
-            border: 2px solid blue;
+            border: 2px solid black;
         }
         </style>
         </head>
         <body>
+            <br/>  <br/> <br/>
+            <center><h1>LOGIN:</h1></center>
             <center>
-                <div id="myDiv">
-            <h1 style="color:blue;">Login Page</h1>
+                <br/> 
+                <div id="myDiv" style="background:pink;">
+            <h2 style="color:black;">Login Page</h2>
             <form onsubmit="login()">
                 <label for="UserName">Enter the UserName:</label>
                 <input type="text" name="UserName" id="UserName" placeholder="Enter Name"required autofocus>
@@ -30,9 +33,9 @@
                       event.preventDefault();
                       alert("Login clicked Successfull")
                       let UserName = document.querySelector("#UserName").value;
-                      alert("UserName:" +UserName);
+                      //alert("UserName:" +UserName);
                       let password = document.querySelector("#password").value;
-                      alert("Password:" +password);
+                      //alert("Password:" +password);
                       if(UserName == "admin" && password == "1234" && UserName.length > 3 && password.length > 3) 
                       {
                       alert("Login Success")
