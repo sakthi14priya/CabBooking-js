@@ -1,10 +1,22 @@
 <html>
 <head>
 <title>Bill</title>
+<style>
+  div      {
+            width: 400px;
+            height: 200Px;
+            border: 2px solid black;
+            }
+</style>
 </head>
 <body>
+  <br/> <br/><br/><br/><br/>
+  <center>
+    <h1>Select Type:</h1>
+    <div id="myDiv" style="background:lightblue;">
 <form onsubmit="Bill()">
-<label> Select Cab Type</label>
+  <br/> <br/>
+<label> <br/>Select Cab Type:</label>
 <Select name="Cabtype" required>
 <option disabled>--Select cab type--</option>
 <option value="MICRO">Micro</option>
@@ -13,17 +25,19 @@
 </Select>
 <br/>
 <br/>
-<label>Enter Kms:</label>
+<label><br/>Enter Kms:</label>
 <input type="number" id="km" placeholder="Enter Kms" required>
-<br/>
-<br/>
+<br/> <br/>
 <center><button>Submit</button></center>
+<br/> <br/>
+</center>
 </form>
+</div>
 <script>
   function Bill()
   {
     event.preventDefault();
-    alert("The button is clicked")
+    alert("The CabType and Km is selected")
     window.location.href="DateTime.html";
   }
 </script>
